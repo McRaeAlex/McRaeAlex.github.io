@@ -5,7 +5,7 @@ I am a second year computer science co op student at the University of Victoria.
 
 ## Projects
 ### Rusty Snake
-![Rust logo](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/Rust_Logo.png | height=200)
+<img src="https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/Rust_Logo.png" height="250"/>
 
 Rusty Snake is a battle snake server written in rust. It uses rocket as its http framework and Serde to serialize and deserialize json. I created Rusty out of curiosity, being someone who has taught themselves Java in high school and python the summer before University I didn't understand what happens at lower levels. This is why I choose to pick up rust. Rust made me realize how much highlevel languages like python and java abstract for you. Another benefit from rust was that its fast and I think that this open up a bunch of options on the things I can do with this snake. At the current time I am planning to add machine learning, but due to the faster speeds I could run complex algorithms like a* in a fraction of the time compared to my past snakes and possibly run multiple algorithms and compare results.
 
@@ -39,7 +39,7 @@ I use flask for the backend and bootstrap for the front end. Database is done th
 `Future plans:` I want to turn this into an elaborate WebApp with a database and the whole gig. I will wait until my plan with HostGator is up however. 
 
 ### Battle Snake
-![Battle Snake](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/battlesnake.png | height=200)
+<img src="https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/battlesnake.png" height="200"/>
 
  When I saw this competition, I knew I had to do it, it seemed like the perfect opportunity to put what I have learned in class and by myself to the test. I got together a group of guys and we started, it was all our first time and we were all first-year students. Our first step was coming up with a strategy, at first, we were talking convolutional neural nets and advanced algorithms but quickly were hit in the face with a reality check, non-of us had any experience with neural nets and a majority of our group didn't even know python yet. We took a step back and discussed. In the end we had our strategy, don't die.
 
