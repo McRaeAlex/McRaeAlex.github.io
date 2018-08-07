@@ -39,7 +39,7 @@ I use flask for the backend and bootstrap for the front end. Database is done th
 `Future plans:` I want to turn this into an elaborate WebApp with a database and the whole gig. I will wait until my plan with HostGator is up however. 
 
 ### Battle Snake
-![Battle Snake](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/battlesnake.png)
+<img src="https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/battlesnake.png" height=200/>
 
  When I saw this competition, I knew I had to do it, it seemed like the perfect opportunity to put what I have learned in class and by myself to the test. I got together a group of guys and we started, it was all our first time and we were all first-year students. Our first step was coming up with a strategy, at first, we were talking convolutional neural nets and advanced algorithms but quickly were hit in the face with a reality check, non-of us had any experience with neural nets and a majority of our group didn't even know python yet. We took a step back and discussed. In the end we had our strategy, don't die.
 
