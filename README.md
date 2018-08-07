@@ -5,7 +5,7 @@ I am a second year computer science co op student at the University of Victoria.
 
 ## Projects
 ### Rusty Snake
-![Rust Logo]()
+![Rust Logo](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/Rust_Logo.png)
 
 Rusty Snake is a battle snake server written in rust. It uses rocket as its http framework and Serde to serialize and deserialize json. I created Rusty out of curiosity, being someone who has taught themselves Java in high school and python the summer before University I didn't understand what happens at lower levels. This is why I choose to pick up rust. Rust made me realize how much highlevel languages like python and java abstract for you. Another benefit from rust was that its fast and I think that this open up a bunch of options on the things I can do with this snake. At the current time I am planning to add machine learning, but due to the faster speeds I could run complex algorithms like a* in a fraction of the time compared to my past snakes and possibly run multiple algorithms and compare results.
 
@@ -16,6 +16,7 @@ Rusty Snake is a battle snake server written in rust. It uses rocket as its http
 `Future plans:` My next goal is to add machine learning to this project. 
 
 ### Whale Tracker
+![Google Maps Logo](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/googlemaps.png)
 
 This is a website that uses the google maps api and plots different types of whales on the map. When you click on a whale it shows more detailed data about the whale such as: name, age, data tagged, etc.. I am also looking to draw the path the whale took over the last 30 days with possibilities of that the number of days be a option for the user to play with. I would say this is very similar to the snapchat map which you can see here but for whales.
 
@@ -26,6 +27,7 @@ This is a website that uses the google maps api and plots different types of wha
 `Future plans:` I want to finish this completely add actual whales and possible other marine life if I cannot get whale data. 
 
 ### WebApp
+![Flask Logo](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/flask.png)
 
 This is currently in progress but I want to expand my website, currently I have a working prototype on Heroku however do to me having a plan with HostGator I will keep adding to it until my plan is up at which point my website will become the WebApp.
 I use flask for the backend and bootstrap for the front end. Database is done through Postgres and mySQL. Although it is currently very simple with just the ability to read the notes and I put and download them I will be adding the ability to upload notes remotely.
@@ -37,6 +39,7 @@ I use flask for the backend and bootstrap for the front end. Database is done th
 `Future plans:` I want to turn this into an elaborate WebApp with a database and the whole gig. I will wait until my plan with HostGator is up however. 
 
 ### Battle Snake
+![Battle Snake](https://raw.githubusercontent.com/McRaeAlex/McRaeAlex.github.io/master/battlesnake.png)
 
  When I saw this competition, I knew I had to do it, it seemed like the perfect opportunity to put what I have learned in class and by myself to the test. I got together a group of guys and we started, it was all our first time and we were all first-year students. Our first step was coming up with a strategy, at first, we were talking convolutional neural nets and advanced algorithms but quickly were hit in the face with a reality check, non-of us had any experience with neural nets and a majority of our group didn't even know python yet. We took a step back and discussed. In the end we had our strategy, don't die.
 
