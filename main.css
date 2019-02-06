@@ -39,9 +39,14 @@ body {
   padding-top: 10px;
 }
 
+.Landing-Page-Picture-Div {
+  padding-top: 20px;
+}
+
 .Landing-Page-Picture {
   border-radius: 70%;
-  max-width: 30%;
+  max-width: 90%;
+  width: 300px;
   height: auto;
 }
 
