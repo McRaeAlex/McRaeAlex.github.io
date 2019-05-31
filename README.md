@@ -1,6 +1,21 @@
 # Website
 
-## CSS/SCSS
+## Notes
+
+### CSS/SCSS
+
+This must be used every project so the width does not depend on the content.
+
+```css
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+```
 
 BEM conventions must be used
 
