@@ -1,0 +1,24 @@
+
+.landing-page {
+    height: 90vh;
+    text-align: center;
+
+    padding-top: 20px;
+
+    // structure
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // TODO: if on mobile make flex-start
+    align-items: center;
+}
+
+.landing-page__image {
+    border-radius: 100%;
+
+    // flexbox
+    //align-self: center;
+}
+
+.landing-page__text {
+    max-width: 90%;
+}
