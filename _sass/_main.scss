@@ -1,8 +1,12 @@
 html {
+    height: 100%;
     width: 100%; // this gets added so the width is not based on the content
+    scroll-behavior: smooth;
 }
 
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
 }

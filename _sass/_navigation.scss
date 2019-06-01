@@ -1,19 +1,18 @@
-@import "colors";
+@import "globals";
 
 .navigation {
-    height: 5vh;
+    height: 10vh;
     background-color: grey;
-    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .navigation__list {
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    list-style-type: none;
 }
 
 .navigation__item {
