@@ -1,4 +1,5 @@
 .blog-page {
+    margin: 10px 50px 10px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,13 +11,18 @@
 }
 
 .blog-posts {
+    width: 50em; // makes sure the width of text is easily readable
     text-align: left;
+    list-style: none;
 }
 
 .blog-posts__item-title {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    text-align: text-bottom;
+
+    margin: 10px 0px 10px 0px;
 
     h2 {
         font-size: 1.5em;
