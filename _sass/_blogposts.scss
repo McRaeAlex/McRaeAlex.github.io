@@ -1,0 +1,24 @@
+.blog-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin: 10px 0 10px 0;
+        font-size: 2em;
+        text-decoration: underline;
+    }
+}
+
+.blog-posts {
+    text-align: left;
+}
+
+.blog-posts__item-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
