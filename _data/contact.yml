@@ -1,0 +1,10 @@
+- name: Email
+  value: mail@alexandermcrae.com
+- name: Phone
+  value: (905) 746 1228
+- name: Github
+  value: github.com/mcraealex
+- name: Linkedin
+  value: linkedin.com/in/mcraealex
+- name: Twitter
+  value: "@AlexanderJMcRae"

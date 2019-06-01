@@ -4,10 +4,11 @@
 
 Remove from list when done
 
-- make another include that just selects the last 4 or 5 blog posts instead of all.
+- make another `include` that just selects the last 4 or 5 blog posts instead of all.
 - projects page
 - contact page
 - add to blog section catagories and the list of blogs that relate
+- better 404 page
 
 ## Notes
 

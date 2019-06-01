@@ -2,4 +2,14 @@
 layout: default
 title: About
 ---
-<h1>Contact</h1>
+<div class="contact-page">
+    <h1>Contact</h1>
+
+    <ul>
+        {% for item in site.data.contact %}
+        <li class="">
+            <span href="">{{ item.name }} : {{ item.value }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
