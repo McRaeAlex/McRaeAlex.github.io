@@ -9,7 +9,8 @@
 }
 
 .blog-posts {
-    width: 50em; // makes sure the width of text is easily readable
+    max-width: 50em; // makes sure the width of text is easily readable
+    width: 90vw;
     text-align: left;
     list-style: none;
 }
