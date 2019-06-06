@@ -1,7 +1,5 @@
-<!-- TODO: Make this show the last 5 posts instead of all -->
 <ul class="blog-posts">
-    {{ site.posts | jsonify }}
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     <li class="blog-posts__item">
         <div class="blog-posts__item-title">
             <span><a href="{{ post.url }}">{{ post.title }}</a></span>
