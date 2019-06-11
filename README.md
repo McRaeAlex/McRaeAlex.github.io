@@ -5,8 +5,6 @@
 Remove from list when done
 
 - projects page
-- contact page
-    - make sure each thing that is a link is clickable and email automatically sends email using mailto:
 - add to blog section catagories and the list of blogs that relate
 - better 404 page
 
