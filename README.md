@@ -5,6 +5,12 @@
 Remove from list when done
 
 - projects page
+    - Card format
+    - I want to be able to filter projects based on language, topic ie. webdev,
+    graphics, systems
+    - I want a short description for each to show up before clicking on them
+    - I want a picture on the card
+    - I want to be able to attach blog posts to it
 - add to blog section catagories and the list of blogs that relate
 - better 404 page
 
