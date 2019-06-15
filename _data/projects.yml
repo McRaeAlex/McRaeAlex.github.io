@@ -1,0 +1,20 @@
+- name: VancouverCSS
+  link: https://github.com/mcraealex/VancouverCSS
+  description: "A css animation / drawing of vancouver"
+  img: /assets/images/VancouverCSS.png
+- name: RustySnake
+  link: https://github.com/mcraealex/RustySnake
+  description: "A starter snake template in Rust for battlesnake.io"
+  img: /assets/images/RustySnake.jpg
+- name: tinyRayTracer
+  link: https://github.com/mcraealex/tiny-raytracer
+  description: "A small, extendable raytracer written in rust"
+  img: /assets/images/Tiny-raytracer.png
+- name: Advent of Code 2018
+  link: https://github.com/mcraealex/AdventOfCode2018
+  description: "A series of programming problems leading up to christmas!"
+  img: /assets/images/AOC2018.jpg
+- name: tiny URL
+  link: https://github.com/mcraealex/tinyURL
+  description: "A web application that minifies URL's similar to bit.ly"
+  img: /assets/images/Github.png

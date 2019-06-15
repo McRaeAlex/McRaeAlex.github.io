@@ -1,0 +1,12 @@
+<div class="projects">
+    {% for item in site.data.projects %}
+    <div class="card projects_item">
+        <a href="{{ item.link }}" target="_blank">
+            <img class="card_img" src="{{ item.img }}" alt="project image">
+        </a>
+        <h3 class="card_title">{{ item.name }}</h3>
+        <p class="card_description">{{ item.description }}</p>
+
+    </div>
+    {% endfor %}
+</div>

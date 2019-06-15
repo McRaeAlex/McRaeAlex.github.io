@@ -1,0 +1,10 @@
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects_item {
+    flex-basis: auto;
+}
