@@ -14,6 +14,8 @@ Remove from list when done
     - [ ] I want to be able to attach blog posts to it
 - add to blog section catagories and the list of blogs that relate
 - better 404 page
+- rewrite CSS using every-layout.dev as a guide! **!IMPORTANT!**
+- Add color!
 
 ## Notes
 
