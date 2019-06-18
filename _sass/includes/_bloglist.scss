@@ -1,0 +1,17 @@
+.latest-posts {
+    background-color: rgba(4, 245, 246, 1);
+}
+
+.blog-posts {
+    list-style-type: none;
+}
+
+.blog-posts-item {
+    max-width: 50ch;
+    text-align: left;
+}
+
+.blog-posts-item__title {
+    display: flex;
+    justify-content: space-between;
+}
