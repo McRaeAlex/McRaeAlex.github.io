@@ -1,0 +1,373 @@
+:root {
+    --mountain-width: 150px;
+    --mountain-height: 200px;
+    --mountain-color: rgb(61, 95, 60);
+
+    --mountain-top-width: 37px;
+    --mountain-top-height: 50px;
+    --mountain-top-color: snow;
+
+    --mountain-cap-width: 15px;
+    --mountain-cap-height: 15px;
+
+    --night-sky-height: 90%;
+
+    --cloud-size: 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --night-sky-height: 100%;
+    }
+}
+
+.cssanimation {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: calc(1 - 20);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) var(--night-sky-height), rgba(4, 245, 246, 1) 100%);
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+
+    border-left: var(--mountain-width) solid transparent;
+    border-right: var(--mountain-width) solid transparent;
+    border-bottom: var(--mountain-height) solid var(--mountain-color);
+    z-index: calc(1 - 20);
+}
+
+/* 
+    This makes it so when you hover a mountain it puts it to the back
+    this allows the tilte of mountains in the back to be seen.
+*/
+.mountain:hover {
+    z-index: calc(3 - 20);
+}
+
+.mountain-top {
+    position: absolute;
+    bottom: calc(0px - var(--mountain-top-height));
+    left: calc(0px - var(--mountain-top-width));
+
+    border-left: var(--mountain-top-width) solid transparent;
+    border-right: var(--mountain-top-width) solid transparent;
+    border-bottom: var(--mountain-top-height) solid var(--mountain-top-color);
+    z-index: calc(2 - 20);
+}
+
+.mountain-cap {
+    position: absolute;
+    bottom: calc((-1 * (var(--mountain-cap-height) + var(--mountain-top-height))) + 1px);
+    border-left: var(--mountain-cap-width) solid transparent;
+    border-right: var(--mountain-cap-width) solid transparent;
+    border-top: var(--mountain-cap-height) solid var(--mountain-top-color);
+    z-index: calc(2 - 20);
+}
+
+.mountain-cap-two {
+    left: calc(0px - 2 * var(--mountain-cap-width));
+}
+
+.mountain-one {
+    opacity: 0.95;
+    z-index: calc(4 - 20);
+}
+
+.mountain-two {
+    opacity: 0.5;
+    left: 90px;
+    z-index: calc(2 - 20);
+}
+
+.mountain-three {
+    left: 180px;
+    z-index: calc(5 - 20);
+}
+
+/* Cloud Animation */
+
+.cloud {
+    position: absolute;
+    z-index: calc(3 - 20);
+
+    width: var(--cloud-size);
+    height: calc(var(--cloud-size) / 2.8);
+    border-radius: calc(var(--cloud-size) / 2.5);
+
+    animation: cloud-movement linear 20s infinite;
+}
+
+.cloud:after,
+.cloud:before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+}
+
+.cloud:after {
+    width: calc(var(--cloud-size) / 2.5);
+    height: calc(var(--cloud-size) / 2.5);
+    border-radius: calc(var(--cloud-size) / 2.5);
+    left: calc(var(--cloud-size) / 8.333);
+    top: calc(var(--cloud-size) / -6.25);
+    z-index: calc(10 - 20);
+}
+
+.cloud:before {
+    width: calc(var(--cloud-size) / 2.1);
+    height: calc(var(--cloud-size) / 2.1);
+    border-radius: 100%;
+    left: calc(var(--cloud-size) / 2.5);
+    top: calc(var(--cloud-size) / -4.16666666);
+}
+
+@keyframes cloud-movement {
+    0% {
+        left: calc(-10px - var(--cloud-size));
+        bottom: 100px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    100% {
+        left: 100vw;
+        bottom: 200px;
+        background-color: #636363;
+    }
+}
+
+/* City Drawing */
+
+/* Depths are from 10 to 20 */
+
+.city {
+    z-index: calc(10 - 20);
+}
+
+.tower-xl {
+    position: absolute;
+    height: 150px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-lg {
+    position: absolute;
+    height: 120px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-md {
+    position: absolute;
+    height: 115px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-sm {
+    position: absolute;
+    height: 110px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower-xsm {
+    position: absolute;
+    height: 90px;
+    width: 60px;
+
+    box-shadow: 5px 0px lightgrey;
+}
+
+.tower1 {
+    bottom: 0px;
+    left: 350px;
+    z-index: calc(11 - 20);
+
+    background-color: grey;
+}
+
+.tower2 {
+    bottom: 0px;
+    left: 250px;
+    z-index: calc(12 - 20);
+
+    background-color: darkgrey;
+}
+
+.tower3 {
+    bottom: 0;
+    right: 25px;
+    z-index: calc(12 - 20);
+
+    background-color: rgb(121, 117, 117);
+}
+
+.tower4 {
+    bottom: 0;
+    right: 80px;
+    z-index: calc(11 - 20);
+
+    background-color: darkgrey;
+}
+
+.tower5 {
+    bottom: 0px;
+    right: 300px;
+
+    background-color: antiquewhite;
+    z-index: calc(11 - 20);
+}
+
+.tower6 {
+    bottom: 0;
+    right: 320px;
+
+    background-color: rgb(88, 112, 114);
+    z-index: calc(12 - 20);
+}
+
+.tower7 {
+    right: 245px;
+    bottom: 0px;
+
+    background-color: rgb(181, 189, 189);
+    z-index: calc(11 - 20);
+}
+
+.tower8 {
+    right: 150px;
+    bottom: 0px;
+
+    background-color: bisque;
+    z-index: calc(12 - 20);
+}
+
+.tower9 {
+    right: 200px;
+    bottom: 0px;
+
+    background-color: rgb(160, 138, 108);
+    z-index: calc(13 - 20);
+}
+
+.tower10 {
+    right: 120px;
+    bottom: 0px;
+
+    background-color: gray;
+    z-index: calc(10 - 20);
+}
+
+.convention-center {
+    position: absolute;
+    bottom: 0px;
+    right: 380px;
+    z-index: calc(15 - 20);
+
+    height: 50px;
+    width: 100px;
+
+    background-color: red;
+}
+
+.windows {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: calc(12 - 20);
+
+    height: 10px;
+    width: 10px;
+
+    background-color: lightblue;
+    box-shadow: 20px 0px red, 40px 0px purple,
+        0px 20px pink, 20px 20px teal, 40px 20px greenyellow,
+        0px 40px brown, 20px 40px gold, 40px 40px orangered,
+        0px 60px yellow, 20px 60px orange, 40px 60px lightgrey,
+        0px 80px turquoise, 20px 80px silver, 40px 80px honeydew,
+        0px 100px yellow, 20px 100px orange, 40px 100px lightgrey;
+}
+
+.windows-sm {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: calc(12 - 20);
+
+    height: 10px;
+    width: 10px;
+
+    background-color: lightblue;
+    box-shadow: 20px 0px red, 40px 0px purple,
+        0px 20px pink, 20px 20px teal, 40px 20px greenyellow,
+        0px 40px brown, 20px 40px gold, 40px 40px orangered,
+        0px 60px yellow, 20px 60px orange, 40px 60px lightgrey,
+        0px 80px turquoise, 20px 80px silver, 40px 80px honeydew;
+}
+
+.windows-xsm {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: calc(12 - 20);
+
+    height: 10px;
+    width: 10px;
+
+    background-color: lightblue;
+    box-shadow: 20px 0px red, 40px 0px purple,
+        0px 20px pink, 20px 20px teal, 40px 20px greenyellow,
+        0px 40px brown, 20px 40px gold, 40px 40px orangered,
+        0px 60px turquoise, 20px 60px silver, 40px 60px honeydew;
+}
+
+/* This is the stars animation */
+
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+.stars,
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--night-sky-height);
+    display: block;
+}
+
+.stars {
+    background: transparent url(/assets/images/stars2.png) repeat top center;
+    z-index: calc(0 - 20);
+}
+
+.twinkling {
+    background: transparent url(/assets/images/twinkling.png) repeat top center;
+    z-index: calc(1 - 20);
+    animation: move-twink-back 200s linear infinite;
+}

@@ -1,3 +1,11 @@
 .heading {
     text-decoration: underline;
 }
+
+.center-horizontal {
+    text-align: center;
+}
+
+.center-horizontal > * {
+    margin: 0 auto;
+}

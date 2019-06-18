@@ -5,18 +5,16 @@
 layout: default
 title: Home
 ---
-<div>
-    <img src="assets/images/face.jpeg" alt="Headshot">
-    <h1>Welcome to my website!</h1>
+<div class="landing-page stack center-horizontal">
+    <img class="landing-page__headshot" src="assets/images/face.jpeg" alt="Headshot">
+    <h2>Welcome to my website!</h2>
     <p>
         A little bit about me: I am a second year computer science co op student at the University of Victoria. I am
         from Grimsby, Ontario, which is a town near Niagara Falls. In my free time I enjoy running, coding, and learning
         in general. My favorite programming language is Rust because it confuses
-        me at times and I enjoy that.
+        me at times and I enjoy that. My least favorite programming language is CSS because do you think this background
+        animation worked the first 100 times?
     </p>
-    {% include mountainanimation.html %}
+    {% include vancouver.html %}
 </div>
-<div>
-    <h1>Lastest Posts</h1>
-    {% include bloglatest.html %}
-</div>
+{% include bloglatest.html %}

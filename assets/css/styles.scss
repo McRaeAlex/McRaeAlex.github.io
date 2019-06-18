@@ -4,8 +4,11 @@
 // general styles
 @import "elements";
 @import "layouts/stack";
+@import "main";
 
 // content specific styles
 @import "components/navbar";
 
-@import "main";
+// page specific styles
+@import "pages/vancouver";
+@import "pages/landingpage";
