@@ -50,3 +50,5 @@ BEM conventions must be used
     color: red;
 }
 ```
+
+Composable over individual styling.

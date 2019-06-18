@@ -1,12 +1,11 @@
 ---
 ---
 
+// general styles
+@import "elements";
+@import "layouts/stack";
+
+// content specific styles
+@import "components/navbar";
+
 @import "main";
-@import "navigation";
-@import "landingpage";
-@import "animation";
-@import "blogposts";
-@import "contact";
-@import "post";
-@import "card";
-@import "project";

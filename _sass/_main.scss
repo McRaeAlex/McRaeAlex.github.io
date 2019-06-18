@@ -1,30 +1,3 @@
-html {
-    height: 100%;
-    width: 100%; // this gets added so the width is not based on the content
-    scroll-behavior: smooth;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-}
-
-h1 {
-    font-size: 2rem;
-    text-decoration: underline;  
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 18px;
-}
-
-.section-heading {
-    text-align: center;
-    margin: 10px 0 10px 0;
+.heading {
+    text-decoration: underline;
 }

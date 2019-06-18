@@ -1,0 +1,54 @@
+/*
+This is a css file for styling general elements
+*/
+
+$font-size-base: 1rem;
+$font-size-smd: 1.25rem;
+$font-size-md: 1.5rem;
+$font-size-lg: 1.75rem;
+$font-size-xl: 2.25rem;
+
+* {
+    box-sizing: border-box;
+    max-width: 50ch;
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-size: $font-size-xl;
+}
+
+h2 {
+    font-size: $font-size-lg;
+}
+
+h3 {
+    font-size: $font-size-md;
+}
+
+h4 {
+    font-size: $font-size-smd;
+}
+

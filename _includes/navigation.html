@@ -1,7 +1,12 @@
-<nav class="navigation">
-    <ul class="navigation__list">
+<nav class="nav-bar">
+    <a href="/index.html" class="nav-bar-brand">
+        <img class="nav-bar-brand__logo" src="/assets/images/whale.svg" alt="Logo">
+        Alex McRae
+    </a>
+    <button class="nav-bar-menu"></button>
+    <ul class="nav-bar-links">
         {% for item in site.data.navigation %}
-        <li class="navigation__item {% if page.url == item.link %}navigation__item_current{% endif %}">
+        <li class="nav-bar-links__item {% if page.url == item.link %}navigation__item_current{% endif %}">
             <a href="{{ item.link }}">{{ item.name }}</a>
         </li>
         {% endfor %}

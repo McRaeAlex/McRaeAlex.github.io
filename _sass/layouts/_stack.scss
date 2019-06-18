@@ -1,0 +1,21 @@
+.stack {
+    --space: 1rem;
+}
+
+.stack>* {
+    margin: 0;
+}
+
+.stack>*+* {
+    margin-top: var(--space);
+}
+
+.exception,
+.exception + * {
+  --space: 3rem;
+}
+
+h2,
+h2 + * {
+  --space: 3rem;
+}
