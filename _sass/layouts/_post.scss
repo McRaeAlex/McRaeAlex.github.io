@@ -1,5 +1,14 @@
+.post {
+    width: 100%;
+}
 .post_content {
     margin-top: 10px;
     text-align: left;
     max-width: 50ch;
+    width: 90%;
+}
+
+.post_content > p > img {
+    max-width: 100%;
+    height: auto;
 }
