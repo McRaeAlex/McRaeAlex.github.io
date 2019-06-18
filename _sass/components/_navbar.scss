@@ -1,6 +1,7 @@
 @import "globals";
 
 .nav-bar {
+    height: 9vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -29,21 +30,11 @@
     flex: 1;
     justify-content: space-evenly;
     padding: 10px;
-    height: 100%;
-}
-
-.nav-bar-links__item {
-    display: block;
 }
 
 .nav-bar-links__item, .nav-bar-links__item * {
     text-decoration: none;
     color: black;
-    height: 100%;
-}
-
-.nav-bar-links__item:hover {
-    background-color: red;
 }
 
 .nav-bar-menu {

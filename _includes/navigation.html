@@ -4,12 +4,12 @@
         Alex McRae
     </a>
     <button class="nav-bar-menu"></button>
-    <ul class="nav-bar-links">
+    <div class="nav-bar-links">
         {% for item in site.data.navigation %}
-        <li class="nav-bar-links__item {% if page.url == item.link %}navigation__item_current{% endif %}">
+        <span class="nav-bar-links__item {% if page.url == item.link %}navigation__item_current{% endif %}">
             <a href="{{ item.link }}">{{ item.name }}</a>
-        </li>
+        </span>
         {% endfor %}
-    </ul>
+    </div>
 
 </nav>
