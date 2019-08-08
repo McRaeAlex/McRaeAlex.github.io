@@ -1,14 +1,16 @@
 .latest-posts {
-    background-color: rgba(4, 245, 246, 1);
+    background-color: lightcyan;
 }
 
 .blog-posts {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 .blog-posts-item {
     max-width: 50ch;
     text-align: left;
+    padding: 10px;
 }
 
 .blog-posts-item__title {

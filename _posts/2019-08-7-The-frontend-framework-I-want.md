@@ -1,4 +1,9 @@
-# The front end framework I want
+---
+layout: post
+author: Alexander McRae
+categories: [Work]
+tags: [Web, js, javascript, vue, react, www]
+---
 
 This is a post about the front-end framework I want. This post happened because as I continue to develope applications I find that the tooling is far to complex for the end user, even after its setup. I really enjoy vue js, but its due to the ecosystem I feel like I am not productive enough.
 
@@ -85,10 +90,10 @@ export {
 
 ## Testing
 
-This is the portion of js that I hate. Jest, Mocha, anything really sucks.
+This is the portion of js that I hate. Jest, Mocha, anything really sucks. This is a large reason why i want that easy to use and create backend mentioned above.
 
-### Unit
+## Conclusion
 
+Overall nothing is perfect, not Vue not React and not my framework either, but I believe a framework with this level of developer friendliness could push the ecosystem in the correct direction.
 
-### Integration
 
