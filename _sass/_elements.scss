@@ -10,7 +10,10 @@ $font-size-xl: 2.25rem;
 
 * {
     box-sizing: border-box;
-    max-width: 50ch;
+}
+
+p {
+    max-width: 75ch;
 }
 
 html,

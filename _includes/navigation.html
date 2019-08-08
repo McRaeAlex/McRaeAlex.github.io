@@ -1,14 +1,19 @@
-<nav class="nav-bar">
-    <a href="/index.html" class="nav-bar-brand">
-        <img class="nav-bar-brand__logo" src="/assets/images/whale.svg" alt="Logo">
-        Alex McRae
-    </a>
-    <button class="nav-bar-menu"></button>
-    <div class="nav-bar-links">
+<nav class="navbar">
+    <h1 class="navbar-title">
+        <img src="/assets/images/whale.svg"
+             alt="logo" class="navbar-logo">
+        <a href="/index.html">Alex McRae</a>
+    </h1>
+    <div class="toggle" id="navbar-toggle">
+        <div class="toggle-line"></div>
+        <div class="toggle-line"></div>
+        <div class="toggle-line"></div>
+    </div>
+    <ul class="navbar-nav" id="navbar-nav">
         {% for item in site.data.navigation %}
-        <span class="nav-bar-links__item {% if page.url == item.link %}navigation__item_current{% endif %}">
-            <a href="{{ item.link }}">{{ item.name }}</a>
-        </span>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
         {% endfor %}
     </div>
 

@@ -1,18 +1,30 @@
 ---
 ---
 
+
+// Whiskey
+@import "variables";
+@import "utils/normalize";
+
+@import "components/button";
+@import "components/card";
+@import "components/navbar";
+
+@import "utils/hover";
+
 // general styles
 @import "elements";
 @import "layouts/stack";
 @import "main";
 
-// content specific styles
-@import "components/navbar";
-
 // page specific styles
 @import "pages/vancouver";
 @import "pages/landingpage";
+@import "pages/projects";
 @import "layouts/post";
 
 // includes
 @import "includes/bloglist";
+@import "includes/latestposts";
+
+

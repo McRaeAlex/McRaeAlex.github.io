@@ -10,7 +10,7 @@
   link: https://github.com/mcraealex/tiny-raytracer
   description: "A small, extendable raytracer written in rust"
   img: /assets/images/Tiny-raytracer.png
-- name: Advent of Code 2018
+- name: AOC 2018
   link: https://github.com/mcraealex/AdventOfCode2018
   description: "A series of programming problems leading up to christmas!"
   img: /assets/images/AOC2018.jpg

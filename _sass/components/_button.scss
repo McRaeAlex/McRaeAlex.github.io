@@ -1,0 +1,15 @@
+@import "../mixins/button";
+
+
+.btn {
+    @include btn;
+    color: $font-color;
+    background-color: $color-secondary;
+}
+
+.btn-primary {
+    @include btn;
+
+    color: $font-color;
+    background-color: $color-primary;
+}

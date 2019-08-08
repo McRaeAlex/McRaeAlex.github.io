@@ -1,0 +1,19 @@
+.projects-page {
+    min-height: 100%;
+    background-color: $color-secondary;
+}
+
+.projects-heading {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem 1rem;
+    padding: 10px;
+}

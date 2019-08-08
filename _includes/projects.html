@@ -1,12 +1,12 @@
 <div class="projects">
     {% for item in site.data.projects %}
-    <div class="card projects_item">
-        <a href="{{ item.link }}" target="_blank">
-            <img class="card_img" src="{{ item.img }}" alt="project image">
-        </a>
-        <h3 class="card_title">{{ item.name }}</h3>
-        <p class="card_description">{{ item.description }}</p>
-
+    <div class="card">
+        <div class="card-header">{{ item.name }}</div>
+        <img class="card-img" style="height: 175px; width: auto;" src="{{ item.img }}" alt="project image">
+        <div class="card-body">
+            <p class="card-text">{{ item.description }}</p>
+            <a href="{{ item.link }}" class="btn">View the source</a>
+        </div>
     </div>
     {% endfor %}
 </div>

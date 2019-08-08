@@ -1,0 +1,24 @@
+@mixin btn {
+    border: rgba(0, 0, 0, 0.13) solid 1px;
+    border-radius: 4px;
+    padding: $btn-padding-y $btn-padding-x;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        // HACK
+        filter: brightness(95%);
+    }
+}
+
+@mixin btn-generator($name, $text-color, $bg-color, $args...) {
+    .btn-#{$name} {
+        @include btn;
+        color: $text-color;
+        background-color: $bg-color;
+        @each $name, $value in keywords($args) {
+            $name: $value;
+        }
+    }
+}

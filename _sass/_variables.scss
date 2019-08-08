@@ -1,0 +1,26 @@
+// Colors
+$color-primary: lightblue;
+$color-secondary: #fdbf00;
+
+// Font
+$font-color: black;
+
+// Break points
+$mobile: 600px;
+$desktop: 1000px;
+$tv: 1000;
+
+// Nav bar
+$navbar-height: 10vh;
+$navbar-animation-time: 500ms;
+$navbar-nav-bg: $color-secondary;
+$navbar-nav-width: 40%;
+$navbar-nav-link-color: black;
+$navbar-nav-link-color-hover: grey;
+$navbar-z-index: 10;
+
+
+// Buttons
+$btn-alert-color: red;
+$btn-padding-x: 32px;
+$btn-padding-y: 15px;
