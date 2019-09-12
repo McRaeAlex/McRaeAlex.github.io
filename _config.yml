@@ -4,7 +4,7 @@ description: This is my website! Where you will find out all about me, my though
 cover: assets/images/radhakrishna.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
-baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
+baseurl: "" # the subpath of your site, e.g. /blog/ or / for root
 url: "https://mcraealex.github.io" # the base hostname & protocol for your site
 
 pagination:
@@ -23,9 +23,9 @@ twitter: AlexanderJMcRae
 github:  McRaeAlex
 
 #Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
+about: /about
+contact: /contact
+privacy-policy: /privacy-policy
 
 
 permalink: /:title
@@ -51,4 +51,3 @@ exclude:
   - changelog.md
   - "*.Rmd"
   - vendor
-  - .travis.yml
