@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: Contact
-permalink: /contact/
 ---
 
-If you would like to contact me please email me at mail@alexandermcrae.com
+# Contact
+
+If you would like to contact me please reach me at my email mail@alexandermcrae.com
