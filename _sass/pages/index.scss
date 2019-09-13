@@ -1,0 +1,123 @@
+
+.menu-bar {
+    height: 6vh;
+    width: 100%;
+
+    background: $color-primary;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0 10px 0 10px;
+
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+}
+
+.menu-bar-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hamburger {
+    $toggle-size: 35px;
+    $line-height: 4px;
+    $margin-y: ($toggle-size - $line-height * 4) / 4;
+
+    z-index: 10;
+    width: $toggle-size;
+    height: $toggle-size;
+
+    justify-self: flex-start;
+
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-evenly;
+
+    padding: 0 2px;
+    //border: 1px solid black;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    div {
+        height: $line-height;
+        width: 100%;
+        background: black;
+        margin: $margin-y 0 $margin-y 0; 
+        border-radius: 10px;
+        transition: transform 500ms, background-color 500ms;
+    }
+
+    &.active {
+        div:nth-child(1) {
+            transform: translate(0px, ($line-height + $margin-y)) rotate(45deg);
+        }
+
+        div:nth-child(2) {
+            background-color: transparent;
+        }
+
+        div:nth-child(3) {
+            transform: translate(0px, -1 * ($line-height + $margin-y)) rotate(-45deg);
+        }
+    }
+}
+
+.side-nav {
+    $width: 300px;
+
+    z-index: 9;
+    position: absolute;
+    left: -$width;
+    top: 0;
+
+    height: 100vh;
+    width: $width;
+    transition: transform 500ms;
+
+    padding: 8vh 1.5rem;
+
+    background-color: snow;
+    
+    display: flex;
+    flex-direction: column;
+
+    &.active {
+        transform: translate($width - 1px, 0);
+    }
+
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-primary;
+        margin-bottom: 1rem;
+    }
+}
+
+.landing-img {
+    width: 100%;
+    height: auto;
+    max-height: 94vh;
+}
+
+.text-over-image {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    div {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background: rgba(0, 0, 0, 0.5);
+        
+        padding: 10px;
+        border-radius: 10px;
+        
+        text-shadow: 0 2px 1px rgba(255,0,0,0.67);
+    }
+}

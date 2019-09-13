@@ -1,0 +1,15 @@
+<div class="menu-bar">
+    <!-- This is where that hamburger thing will go-->
+    <div class="hamburger" id="toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <h1 class="menu-bar-title">Alex McRae</h1>
+</div>
+
+<nav class="side-nav" id="nav">
+    {% for page in site.data.navigation %}
+    <a href="{{ page.link }}">{{ page.name }}</a>
+    {% endfor %}
+</nav>
