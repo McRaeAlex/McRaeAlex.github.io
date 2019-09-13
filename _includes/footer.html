@@ -37,17 +37,17 @@
             {% if site.about %}
 
             <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="{{site.baseurl}}{{site.about}}">About</a>
+                <a class="text-decoration-none ampstart-label" href="/{{site.about}}">About</a>
             </li>
             {% endif %} {% if site.contact %}
 
             <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="{{site.baseurl}}{{site.contact}}">Contact</a>
+                <a class="text-decoration-none ampstart-label" href="/{{site.contact}}">Contact</a>
             </li>
             {% endif %} {% if site.privacy-policy %}
 
             <li class="px1">
-                <a class="text-decoration-none ampstart-label" href="{{site.baseurl}}{{site.privacy-policy}}">Privacy Policy</a>
+                <a class="text-decoration-none ampstart-label" href="/{{site.privacy-policy}}">Privacy Policy</a>
             </li>
             {% endif %}
 
@@ -55,11 +55,10 @@
     </nav>
     <small>
         &copy; 2017
-    <a href="{{site.baseurl}}">{{site.name}}</a> &nbsp; | &nbsp;  All Rights Reserved.
+    <a href="/">{{site.name}}</a> &nbsp; | &nbsp;  All Rights Reserved.
 
     </small>
     <small>
       Published with <a href="https://jekyllrb.com/">Jekyll</a>
-      using <a href="https://github.com/samanyougarg/hanuman">Hanuman</a>
     </small>
 </footer>
