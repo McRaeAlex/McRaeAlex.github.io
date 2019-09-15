@@ -1,6 +1,13 @@
 @import "./resets";
 @import "./variables";
+
 @import "./pages/index";
+
+@import "./includes/footer";
+@import "./includes/navigation";
+@import "./includes/blog_posts";
+
+@import "./layouts/blog";
 
 .content {
     width: 100%;
@@ -8,4 +15,10 @@
     
     padding: 20px 0;
     margin: 0 auto 0 auto;
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
 }
