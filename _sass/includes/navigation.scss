@@ -80,6 +80,8 @@
     width: $width;
     transition: transform 500ms;
 
+    font-size: 1.5rem;
+
     padding: 8vh 1.5rem;
 
     background-color: snow;
@@ -92,7 +94,6 @@
     }
 
     a {
-        font-size: 1.5rem;
         text-decoration: none;
         color: $color-primary;
         margin-bottom: 1rem;
