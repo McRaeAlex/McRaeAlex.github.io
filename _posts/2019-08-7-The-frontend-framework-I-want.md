@@ -13,10 +13,10 @@ This is a post about the front-end framework I want. This post happened because 
 - No babel
 - No webpack
 - No eslint
-- Vendored dependencies for components other have built for the framework etc.
+- Vendored dependencies for components others have built for the framework etc.
 - Built in router and store that if they are not used are not included in the build
 - Typescript support or similar maybe own lang
-- Fast as default ie no css in js static html is put in html with dynamic added after etc..
+- Fast as default ie no css in js, static html is put in html with dynamic added after etc.. [Svelte](https://svelte.dev/) has a great approach to this, removing the virtual dom completely
 
 I want the user to be able to write things without thinking of babel or webpack or anything but the frontend
 the user should have the code autolinted.
@@ -25,7 +25,7 @@ the user should have the code autolinted.
 
 Possible structure:
 
-```structure
+{% highlight structure %}
 .
 +-- build
 +-- depends
@@ -40,11 +40,11 @@ Possible structure:
     +-- store.comet // contains the store like vuex
 +-- config.toml
 +-- lint.toml
-```
+{% endhighlight%}
 
 mock.api
 
-```api
+{% highlight api %}
 https://backend/api // matches https requests the domain backend (this is a example for integration with docker compose) and the prefix starts with api
     REQUIRES: {
         cookie: [] // the required cookie or cookies or JWT
@@ -58,15 +58,15 @@ https://backend/api // matches https requests the domain backend (this is a exam
     /posts -> do {
         // write code here to do simple things with the request
     }
-```
+{% endhighlight %}
 
 ## Components
 
 Components should be able to have a structure similar to vues single file components.
 I really like the idea of keeping everything to do with a component in one file.
-The `@`, `:` binding in vue are also great and so is `v-for`, `v-if`, etc..
+The `@`, `:` binding in vue are also great and so is `v-for`, `v-if`, etc.. I think there is room for improvement however with things like scoped css and include and prestyled components, I think there should be some way for a bunch of default styles to apply to all components but not nessecarily all tags.
 
-```Comet
+{% highlight vue %}
 <tempate>
 <div>
     This is a component
@@ -86,11 +86,11 @@ export {
 <style>
 
 </style>
-```
+{% endhighlight %}
 
 ## Testing
 
-This is the portion of js that I hate. Jest, Mocha, anything really sucks. This is a large reason why i want that easy to use and create backend mentioned above.
+This is the portion of js that I hate. Jest, Mocha, anything really sucks. This is a large reason why i want that easy to use and create backend mentioned above. By providing a complete integrated experience for the developer you can ensure that your product will work in deployment.
 
 ## Conclusion
 
