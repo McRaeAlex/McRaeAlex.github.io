@@ -1,13 +1,13 @@
-.landing-img {
-    width: 100%;
-    height: auto;
-    max-height: 94vh;
-}
-
 .text-over-image {
-    position: relative;
+    height: 94vh;
+    background-image: url('/assets/images/landing.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     text-align: center;
     color: white;
+    overflow: hidden;
 
     div {
         position: absolute;
@@ -15,7 +15,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.75);
         
         padding: 10px;
         border-radius: 10px;
