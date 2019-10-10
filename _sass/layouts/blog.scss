@@ -1,0 +1,19 @@
+.blog-post {
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+
+    figure {
+        border-radius: 5px;
+        margin: 0;
+    }
+    pre  {
+        margin: 0;
+        width: 100%;
+        overflow-x: auto;
+        padding: 10px;
+    }
+}
