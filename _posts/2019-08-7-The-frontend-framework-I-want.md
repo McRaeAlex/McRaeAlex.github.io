@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Alexander McRae
-categories: [Work]
+categories: [programming]
 tags: [Web, js, javascript, vue, react, www]
 ---
 
