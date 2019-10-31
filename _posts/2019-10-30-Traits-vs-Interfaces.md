@@ -7,7 +7,7 @@ tags: [C#, Rust, Java]
 
 When learning Rust it's often difficult to understand the differences between 
 things you already know (interfaces) and the Rust alternative (traits). 
-Hopefully for traits and interfaces this post clears that up.
+Hopefully this post clear up some of the differences between traits and interfaces.
 
 Consider this generic method of a JsonNode in C#.
 
@@ -57,7 +57,7 @@ public interface IFromJson {
 }
 ```
 
-So that works, but there are a couple oddities that, at least to me, aren't intuitive. One thing is that we now have the requirement that T has a constructor, which requires us to call the constructor and then read the node into it. Then theres the issue that T.FromJson is reading into the internal values of the implementor. A possible issue with this is that you might want different default values for the implementor's constructor and FromJson methods. Even worse, if the constructor mutates some state it may not be the desired behavior.
+So that works, but there are a couple oddities that, at least to me, aren't intuitive. We now have the requirement that T has a constructor, which requires us to call the constructor and then read the node into it. Then theres T.FromJson which is reading the JsonNode into the internal values of the implementor. A possible issue with this is that you might want different default values for the implementor's constructor and FromJson methods. Even worse, if the constructor mutates some state it may not be the desired behavior.
 
 Now lets look at the way you might write the same thing in Rust with a interface.
 
@@ -86,4 +86,3 @@ This is how I imagine it should work in C#. Self refers to the implementor of th
 2. interfaces know nothing of their implementor
 
 To me these are flaws in the interface system which require work arounds. I prefer the Rust trait system because for cases like these its just easier to read.
-
