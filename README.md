@@ -7,3 +7,5 @@ themes never seem to give me exactly what I want.
 ## To do
 
 See project board [here](https://github.com/McRaeAlex/McRaeAlex.github.io/projects/1)
+
+## Start the dev server
