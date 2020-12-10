@@ -11,7 +11,7 @@ on the columns of lines.
 
 You may think that this is a small problem that is easily solved by python or
 some other language with more flexibility on the problem space. You may be right
-but I will try to convince you that awk's problem space is actually rather large
+but I will try to convince you that Awk's problem space is actually rather large
 and that flexibility comes at a cost.
 
 ## History
@@ -24,7 +24,7 @@ Weinberger (Peter)
 Kernighan (Brian)
 ```
 
-Awk was created to make manipuating both number and strings easy based on 
+Awk was created to make manipulating both number and strings easy based on 
 patterns in the input.
 
 ## Awk programs
@@ -41,7 +41,7 @@ condition { action }
 Awk programs may also have a BEGIN and END statements which run at the beginning
 and end of the program.
 
-Consider the probelm.
+Consider the problem.
 
 Given a text output of
 
@@ -59,9 +59,9 @@ Where the first column is the name, second hourly rate and third hours worked.
 Calculate the amount to be paid for anyone who worked over 15 hours.
 
 In python you might read the text stream into a list of lists or maybe a list of 
-datastructures and then filter the hours and output the amount to be paided.
+data structures and then filter the hours and output the amount to be paid.
 Awk because of the reduced problem space can do this by in one line without the 
-datastructure and lists.
+data structure and lists.
 
 ```awk
 $3 > 15 { print $1, $2 * $3 }
@@ -77,7 +77,7 @@ server you know how difficult it can be to debug something when the data your lo
 want to reach for python to filter out the logs but writing the script could turn out more painful than doing it manually.
 Awk's ability to match on the columns of the logs makes this problem trivial and the cost of implementing it is so low that there is no hesitation.
 
-Awk also works beatifully in a command line environment allowing you to run awk programs without writing them in a file.
+Awk also works beautiful in a command line environment allowing you to run awk programs without writing them in a file.
 
 ```bash
 cat server.log | awk '$1 == "GET" && $2 == "/users"'
