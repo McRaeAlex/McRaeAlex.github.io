@@ -9,19 +9,19 @@ This is a post about the front-end framework I want. This post happened because 
 
 ## Development experience
 
-- One single download for the entire experience I dont care if its a single npm install or a standalone enviroment without node
+- One single download for the entire experience I dont care if its a single npm install or a standalone environment without node
 - No babel
 - No webpack
 - No eslint
-- Vendored dependencies for components others have built for the framework etc.
+- Vender dependencies for components others have built for the framework etc.
 - Built in router and store that if they are not used are not included in the build
 - Typescript support or similar maybe own lang
 - Fast as default ie no css in js, static html is put in html with dynamic added after etc.. [Svelte](https://svelte.dev/) has a great approach to this, removing the virtual dom completely
 
 I want the user to be able to write things without thinking of babel or webpack or anything but the frontend
-the user should have the code autolinted.
+the user should have the code automatically linted.
 
-**One key thing I want is the ability for a developement enviroment that provides fake data to the fronend.** this means that if I make a call to some api I want my developement enviroment to stop that call from going to the server and instead take in in and output fake data which i have told it to. This would help me so much when developing my vue application, its basically faking a backend services which may not be implemented or is not able to be run beside vue for testing. This would stop me from hardcoding data into vuex and testing with that. It also has the added benefit that your api calls are actually happening so you know once real data is used they **should** work. This would even help with docker builds that use aliases for backends in docker_compose.
+**One key thing I want is the ability for a dev environment that provides fake data to the frontend.** this means that if I make a call to some api I want my development environment to stop that call from going to the server and instead take in in and output fake data which i have told it to. This would help me so much when developing my vue application, its basically faking a backend services which may not be implemented or is not able to be run beside vue for testing. This would stop me from hard coding data into Vuex and testing with that. It also has the added benefit that your api calls are actually happening so you know once real data is used they **should** work. This would even help with docker builds that use aliases for backends in docker_compose.
 
 Possible structure:
 
@@ -35,9 +35,9 @@ Possible structure:
     +-- components
     +-- views
         +-- Home.comet
-    +-- main.comet // contains the inital startup code
+    +-- main.comet // contains the initial startup code
     +-- router.comet // contains router
-    +-- store.comet // contains the store like vuex
+    +-- store.comet // contains the store like Vuex 
 +-- config.toml
 +-- lint.toml
 {% endhighlight%}
@@ -64,10 +64,10 @@ https://backend/api // matches https requests the domain backend (this is a exam
 
 Components should be able to have a structure similar to vues single file components.
 I really like the idea of keeping everything to do with a component in one file.
-The `@`, `:` binding in vue are also great and so is `v-for`, `v-if`, etc.. I think there is room for improvement however with things like scoped css and include and prestyled components, I think there should be some way for a bunch of default styles to apply to all components but not nessecarily all tags.
+The `@`, `:` binding in vue are also great and so is `v-for`, `v-if`, etc.. I think there is room for improvement however with things like scoped css and include and pre-styled components, I think there should be some way for a bunch of default styles to apply to all components but not necessarily all tags.
 
 {% highlight vue %}
-<tempate>
+<template>
 <div>
     This is a component
 </div>

@@ -29,7 +29,7 @@ cd vue_phx
 
 ## Setup Vue
 
-Now we create the Vue application with the vue-cli. I have choosen to call mine
+Now we create the Vue application with the vue-cli. I have chosen to call mine
 app but name it whatever you want.
 
 ```
@@ -49,8 +49,8 @@ module.exports = {
 ```
 
 This will change where you Vue app is outputted. If you choose the no webpack 
-option then you can change it to "../priv/static" but agian for my admin pages
-I keep them seperate.
+option then you can change it to "../priv/static" but again for my admin pages
+I keep them separate.
 
 One last thing before we move on is to install the webpack-cli
 ```
@@ -61,7 +61,7 @@ npm install -D webpack-cli
 ## Making Phoenix start the webpack watcher
 
 Now in the dev config of the phoenix application we will add another watcher 
-for the vuejs application.
+for the VueJs application.
 
 ```elixir
 # vue_phx/config/dev.ex
@@ -109,7 +109,7 @@ Now we are going to get phoenix to serve the application at `localhost:4000/`.
 In `lib/vue_phx_web/endpoint.ex` there is a static file server using 
 `Plug.Static`. We are going to add another static file server right below it.
 
-I change the original aswell to serve `at: "/admin"`.
+I change the original as well to serve `at: "/admin"`.
 
 ```elixir
 # vue_phx/lib/vue_phx_web/endpoint.ex

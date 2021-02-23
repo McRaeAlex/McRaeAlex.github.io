@@ -59,7 +59,7 @@ public interface IFromJson {
 
 So that works, but there are a couple oddities that, at least to me, aren't intuitive. The two issues I find are #1 static methods cannot exist in interfaces and #2 interfaces know nothing about the class that implements it.
 
-#1, since interfaces can only describe instances of a class they cannot contain any static methods. This means we cannot define a constructor for T and also cannot describe a method that takes in a JsonNode and produces T, without T already being an instance. The result of this restriction is a call to the constructor with no parameters and then a call to FromJson. This is not ideal as the the constructor could do some statefull thing that the implementor of IJsonNode did not notice and create a undesired result (Spoiler: I did this).
+#1, since interfaces can only describe instances of a class they cannot contain any static methods. This means we cannot define a constructor for T and also cannot describe a method that takes in a JsonNode and produces T, without T already being an instance. The result of this restriction is a call to the constructor with no parameters and then a call to FromJson. This is not ideal as the the constructor could do some state full thing that the implementor of IJsonNode did not notice and create a undesired result (Spoiler: I did this).
 
 #2 Instances know nothing of their implementor. This is less of a problem if #1 went away because you could just do something like this.
 ```cs

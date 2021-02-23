@@ -13,11 +13,11 @@ According the the documentation of elixir the `&` operator `captures` a function
 
 ## Answer
 
-So the `&` operator creates a anonymous function that captures its environmnet (closure) but it can do more.
+So the `&` operator creates a anonymous function that captures its environment (closure) but it can do more.
 
 ### Reordering args
 
-It's useful for the piping operator `|>` and reording parameters.
+It's useful for the piping operator `|>` and reordering parameters.
 
 Consider the following code
 
@@ -28,7 +28,7 @@ String.ends_with?("elixir", x)
 
 Here we are checking if the string `elixir` ends with the string in `x`.
 Maybe we get some input from the user and want to do a series of operation on that input and then compare it to `elixir`. A perfect fit for the `|>`.
-But wait, we have a issue, piping puts the value into the first arguement to a function but our function needs it as the second argument. The capture can solve this.
+But wait, we have a issue, piping puts the value into the first argument to a function but our function needs it as the second argument. The capture can solve this.
 
 ```elixir
 "ir" |> (&String.ends_with?("elixir", &1)).()
@@ -64,7 +64,7 @@ defmodule Something do
 end
 ```
 
-How does elixir know which function (func/0 or func/1) func is refering to in other_func? You can't without some analysis of the code, which takes time and slows down elixir. The solution is to help elixir a bit.
+How does elixir know which function (func/0 or func/1) func is referring to in other_func? You can't without some analysis of the code, which takes time and slows down elixir. The solution is to help elixir a bit.
 
 ```elixir
 defmodule Something do
