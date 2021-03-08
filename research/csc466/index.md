@@ -17,3 +17,7 @@ and looking at doing this with existing technologies rather than a clean slate.
 [MobilityFirst: a mobility-centric and trustworthy internet architecture](./rs1-MobilityFirst.pdf)
 
 [Kademlia: A p2p information system based on the XOR metric](./rs2-A_P2P_Information_System_Based_on_the_XOR_Metric.pdf)
+
+[On the performance and fairness of BitTorrent like data swarming systems with NAT devices](./rs3-On_the_performance_and_fairness_of_BitTorrent-like_data_swarming_systems_with_NAT_devices.pdf)
+
+[MSocket: Extended Technical Report](./rs4-MSocket_Extended_Technical_Report.pdf)
