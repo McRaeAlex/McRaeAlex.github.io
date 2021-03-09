@@ -46,3 +46,13 @@ The proposed solution is very similar to the MSocket and MobilityFirst papers. I
 
 * Not a general solution that can be used with any other protocol
 * The security model isn't as clear as MobilityFirst's
+
+## Project 
+
+### Changes
+
+With reference to the papers above and other papers I have read since starting the project I am aiming towards a general solution closer to MobilityFirst as outlined in the updated proposal. Originally I planned to wrap TCP however have found that many existing libraries and protocols such as MSocket have already done this. My belief now is that a approach must be taken closer to the end-to-end approach if the project ever wants to see use.
+
+### Schedule
+
+I am slightly behind schedule, approximately a week however given the new direction and clarity on the future of the project I feel I can make up the time.
