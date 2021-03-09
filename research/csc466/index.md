@@ -9,6 +9,7 @@ and looking at doing this with existing technologies rather than a clean slate.
 # Project
 
 [Proposal](./Proposal.pdf)
+[Updated](./proposal)
 
 [Update 1: A look at similar research](./update1)
 
