@@ -11,7 +11,11 @@ and looking at doing this with existing technologies rather than a clean slate.
 [Proposal](./Proposal.pdf)
 [Updated](./proposal)
 
+[log](./log)
+
 [Update 1: A look at similar research](./update1)
+
+[Project Report](./Project_Report.pdf)
 
 ## Reading Summaries
 
